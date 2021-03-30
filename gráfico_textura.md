@@ -1,4 +1,4 @@
-### Exemplo de gráfico de textura 
+# Exemplo de gráfico de textura 
 
 # Pacotes: 
 library(devtools) 
@@ -9,7 +9,7 @@ library(magick)
 library(tibble) 
 
 
-# Dados 
+### Dados 
 
 df <- tibble(trt = c("Carvão", "Argila", "Papel Toalha", "Areia", "Fibra de coco", 
 "Folhiço", "Vermiculita"), outcome = c(15, 35, 40, 50, 70, 80, 95), 
@@ -21,7 +21,7 @@ fibracoco = "fib.jpg",
 fol = "leaf-litter.jpg",
 verm = "vermi.jpg"))### As imagens devem estar salvas na pasta do diretório.
 
-# Gráfico 
+### Gráfico 
 
 ggplot(df, aes(x=reorder(trt, outcome), y=outcome, image = images)) +
 geom_textured_col(img_height = unit(1, "null"), img_width = unit(4.4, "null"), width = .9) +
