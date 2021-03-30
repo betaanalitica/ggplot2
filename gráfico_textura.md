@@ -1,8 +1,7 @@
 # Exemplo de gráfico de textura 
 
-# Pacotes: 
+### Pacotes: 
 library(devtools) 
-
 devtools::install_github("clauswilke/ggtextures")
 
 library(ggtextures) 
