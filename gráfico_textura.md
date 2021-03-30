@@ -2,10 +2,15 @@
 
 # Pacotes: 
 library(devtools) 
+
 devtools::install_github("clauswilke/ggtextures")
+
 library(ggtextures) 
+
 library(ggplot2) 
+
 library(magick)
+
 library(tibble) 
 
 
